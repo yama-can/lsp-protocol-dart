@@ -1,4 +1,4 @@
-import 'package:lsp_protocol/src/types.dart';
+import 'package:y_lsp_protocol_client/src/types.dart';
 
 enum DiagnosticSeverity {
   error(1),

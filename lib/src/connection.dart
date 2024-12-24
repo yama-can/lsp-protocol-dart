@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 
-import 'package:lsp_protocol/src/diagnotic.dart';
+import 'package:y_lsp_protocol_client/src/diagnotic.dart';
 
 class LanguageConnection {
   late Process proc;
