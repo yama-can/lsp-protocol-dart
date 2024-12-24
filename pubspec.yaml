@@ -1,6 +1,6 @@
-name: lsp_protocol
-description: A starting point for Dart libraries or applications.
-version: 1.0.0
+name: y_lsp_protocol_client
+description: A simple Dart library for the Language Server Protocol Client.
+version: 0.0.0
 # repository: https://github.com/my_org/my_repo
 
 environment:

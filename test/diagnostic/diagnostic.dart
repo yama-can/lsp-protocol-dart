@@ -1,7 +1,7 @@
 import 'package:test/test.dart';
 import 'dart:io';
 
-import 'package:lsp_protocol/lsp_protocol.dart';
+import 'package:y_lsp_protocol_client/lsp_protocol.dart';
 
 void main() async {
   print("Use .clangd: ${Directory.current.path}/.clangd");
