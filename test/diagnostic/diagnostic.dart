@@ -1,3 +1,4 @@
+import 'package:test/test.dart';
 import 'dart:io';
 
 import 'package:lsp_protocol/lsp_protocol.dart';
@@ -7,8 +8,10 @@ void main() async {
   LanguageConnection connection = LanguageConnection();
   await connection.connect();
   await connection.requestInitialize("file:///${Directory.current.path}/test");
-  await connection.notifyOpenSource("file:///${Directory.current.path}/test/Main.cpp", File("./test/Main.cpp").readAsStringSync());
-  for (var diagnostic in connection.latestDiagnostic.diagnostics) {
-    print("${diagnostic.severity.toString()}: ${diagnostic.message}");
-  }
+  await connection.notifyOpenSource(
+      "file:///${Directory.current.path}/test/Main.cpp",
+      File("./test/Main.cpp").readAsStringSync());
+  test('Diagnostic Expect No Error', () async {
+    expect(connection.latestDiagnostic.diagnostics.length, equals(0));
+  });
 }
