@@ -1,0 +1,12 @@
+CompileFlags:
+  Add:
+    - '--target=x86_64-w64-mingw32'
+    - '-isystemC:\msys64\usr\lib\gcc\x86_64-pc-msys\13.3.0\include\c++\x86_64-pc-msys'
+    - '-isystemC:\msys64\usr\lib\gcc\x86_64-pc-msys\13.3.0\include\c++'
+    - '-isystemC:\msys64\usr\include'
+    - '--std=c++23'
+  Compiler: gcc
+
+Index:
+  Background: Skip
+  StandardLibrary: No
